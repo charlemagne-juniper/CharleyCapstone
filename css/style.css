@@ -1,0 +1,121 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+:root {
+  --bg-color: linear-gradient(#FEEC77, #FFAB8F);
+  --font-color: #1A2731;
+  --box-color: #FFFDF0;
+  --border-color: #FEBA6E;
+  --hover-color: #8490D8;
+}
+
+input:checked,
+input:checked + * {
+  --bg-color: linear-gradient(#8490D8, #1A2731);
+  --font-color: #FFFDF0;
+  --box-color: #1A2731;
+  --border-color: #8490D8;
+  --hover-color: #FEEC77;
+
+}
+
+body { margin: 0; }
+
+* {
+  background: var(--bg-color);
+  color: var(--font-color);
+}
+
+@media (max-width; 600px)
+{}
+@media (min-width; 601px) and (max-width; 1000px) {}
+@media (min-width; 1001px)
+{}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  cursor: url(pointer.png) 4 12, pointer;
+}
+
+input:hover {
+  background: var(--hover-color);
+  opacity: 1;
+}
+
+article {
+  position: absolute;
+  height: 100vh;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: 20px;
+  padding-bottom: 4px;
+  border: solid 3px var(--border-color);
+  width: 500px;
+}
+
+h2 {}
+
+h3, h4, h5 {
+  margin: 0px;
+  text-align: center;
+}
+
+h6 {}
+
+h1, h2, h3, h4, h5, h6 {
+    background: var(--box-color);
+}
+
+#name {
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 1.4;
+  background: var(--box-color);
+  border: solid 3px var(--border-color);
+}
+
+#about {
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 1.4;
+  background: var(--box-color);
+  border: solid 3px var(--border-color);
+}
+
+#gallery {
+   display: flex;  
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.gallery {
+}
+
+.display {
+  max-width: 200px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
