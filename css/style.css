@@ -96,7 +96,6 @@ p {
   margin: 10px 0;
   line-height: 1.4;
   background: var(--box-color);
-  border: solid 3px var(--border-color);
 }
 
 #name {
@@ -285,7 +284,6 @@ li {
   margin: 30px;
   color: #FEBA6E;
   background: #49313A;
-  border: none;
 }
 
 .gallery {
@@ -294,8 +292,8 @@ li {
 }
 
 .queries {
-  margin-bottom: 20px;
-  background: transparent;
+  background: var(--box-color);
+  margin-top: 0%;
 }
 
 .sfw {
