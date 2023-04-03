@@ -34,6 +34,7 @@ input:checked + * {
 
 body { 
   margin: 0;
+  padding: 0;
  }
 
 input[type="checkbox"] {
@@ -41,33 +42,35 @@ input[type="checkbox"] {
   position: absolute;
   z-index: 2;
   top: 10px;
-  right: 10px;
-  width: 75px;
-  height: 75px;
+  right: 60px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   cursor: url(pointer.png) 4 12, pointer;
+  opacity: .5;
 }
 
 input:hover {
   background: var(--hover-color);
-  opacity: 1;
+  opacity: 0;
 }
 
 article {
   position: absolute;
-  height: 100vh;
-  padding: 24px;
+  height: 0px;
+  padding: 0px;
+  margin: 30px;
 }
 
 #harlequins {
   width: 200px;
   background: transparent;
- 
+  float: right;
 }
 
 h1 {
   text-align: center;
-  font-size: 24px;
+  font-size: 36px;
   margin-top: 20px;
   padding-bottom: 4px;
   border: solid 3px var(--border-color);
@@ -88,9 +91,6 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--box-color);
 }
 
-#name {
-  text-align: center;
-}
 p {
   font-size: 18px;
   margin: 10px 0;
@@ -99,9 +99,13 @@ p {
   border: solid 3px var(--border-color);
 }
 
+#name {
+  text-align: center;
+}
+
 #starcontainer {
   background: var(--box-color);
-  margin: -25px;
+  margin: -30px;
 }
 
 #starrynight {
@@ -177,17 +181,6 @@ p {
 label { background-image: radial-gradient(#FFFDF0, #FFF8CA, #FFFDF0, #FFF8CA);
  }
 
-
-
-
-
-
-
-
-
-
-
-
  nav {
 
  }
@@ -248,8 +241,6 @@ li {
   background: #FEEC77;
 }
 
-
-
 .pickacard {
   display: flex;
   flex-wrap: wrap;
@@ -281,7 +272,6 @@ li {
 .outline3 {
     outline: double #FEBA6E 5px;
     margin: 13px;
-
 }
 
 .fortune {
@@ -298,14 +288,55 @@ li {
   border: none;
 }
 
-#gallery {
-   display: flex;  
-  flex-wrap: wrap;
-  justify-content: space-between;
+.gallery {
+  padding: 20px;
   background: transparent;
 }
 
-.gallery {
+.queries {
+  margin-bottom: 20px;
+  background: transparent;
+}
+
+.sfw {
+  width: 80%;
+  margin: 25px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+
+  header, ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles for tablets */
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  body {
+    max-width: 1200px;
+    margin: 0 auto; 
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+  } 
 }
 
 audio {
@@ -314,28 +345,12 @@ audio {
   background: #49313A;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.display {
-  max-width: 200px;
+#aboutsection {
+  background: var(--box-color);
 }
 
-.nsfw {
-  max-width: 200px;
-  opacity: 1.0;
+#about {
+  
 }
 
 /******************************************
