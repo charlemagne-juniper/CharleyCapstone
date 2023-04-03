@@ -133,9 +133,9 @@ p {
 
 #slider label {
   margin: auto;
-  width: 30%;
+  width: 26%;
   height: 80%;
-  border-radius: 4px;
+  border-radius: 15px;
   position: absolute;
   left: 0; right: 0;
   cursor: pointer;
@@ -145,39 +145,34 @@ p {
 #s1:checked ~ #slide4, #s2:checked ~ #slide5,
 #s3:checked ~ #slide1, #s4:checked ~ #slide2,
 #s5:checked ~ #slide3 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
   transform: translate3d(-30%,0,-200px);
 }
 
 #s1:checked ~ #slide5, #s2:checked ~ #slide1,
 #s3:checked ~ #slide2, #s4:checked ~ #slide3,
 #s5:checked ~ #slide4 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
   transform: translate3d(-15%,0,-100px);
 }
 
 #s1:checked ~ #slide1, #s2:checked ~ #slide2,
 #s3:checked ~ #slide3, #s4:checked ~ #slide4,
 #s5:checked ~ #slide5 {
-  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
   transform: translate3d(0,0,0);
 }
 
 #s1:checked ~ #slide2, #s2:checked ~ #slide3,
 #s3:checked ~ #slide4, #s4:checked ~ #slide5,
 #s5:checked ~ #slide1 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
   transform: translate3d(15%,0,-100px);
 }
 
 #s1:checked ~ #slide3, #s2:checked ~ #slide4,
 #s3:checked ~ #slide5, #s4:checked ~ #slide1,
 #s5:checked ~ #slide2 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
   transform: translate3d(30%,0,-200px);
 }
 
-label { background-image: radial-gradient(#FFFDF0, #FFF8CA, #FFFDF0, #FFF8CA);
+label { background: transparent;
  }
 
  nav {
@@ -248,8 +243,8 @@ li {
 }
 
 .card {
-  padding: 10px;
-  margin: 10px;
+  padding: 8px;
+  margin: 0px 10px 0px 10px;
   width: 270px;
   background: #49313A;
   border-radius: 15px;
@@ -257,7 +252,7 @@ li {
 
 .outline1 {
   outline: double #FEBA6E 5px;
-  margin: 20px 20px 20px 20px;
+  margin: 20px;
   padding: -20px;
 }
 
